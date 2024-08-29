@@ -1,12 +1,11 @@
-<nav class="main-header navbar navbar-expand navbar-white navbar-light"
-    style="background-image: linear-gradient(to right,  rgb(74, 86, 90) 13.5%, rgba(243, 203, 212) 78.6% )">
+<nav class="main-header navbar navbar-expand navbar-white navbar-light" style="background: rgb(58, 81, 88)">
     <!-- Left navbar links -->
     <ul class="navbar-nav">
         <li class="nav-item">
             <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
         </li>
         <li class="nav-item d-none d-sm-inline-block">
-            <a href="" class="nav-link">Logout</a>
+            <a href="{{ route('logout') }}" class="nav-link">Logout</a>
             {{-- {{ route('login.logout') }} --}}
         </li>
         <li class="nav-item d-none d-sm-inline-block">
