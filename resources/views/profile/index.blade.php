@@ -3,7 +3,6 @@
 
 @section('content')
     <div class="card">
-        <div class="card-header bg-secondary text-white">Profiles</div>
         <div class="card-body">
             <a href="{{ route('profile.create') }}" class="btn btn-outline-primary mb-2">Add</a>
             <div class="table table-responsive">

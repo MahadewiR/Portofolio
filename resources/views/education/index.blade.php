@@ -2,7 +2,6 @@
 @section('title', 'Education')
 @section('content')
     <div class="card">
-        <div class="card-header bg-secondary text-white">Education</div>
         <div class="card-body">
             <a href="{{ route('education.create') }}" class="btn btn-outline-primary mb-2">Add</a>
             <div class="table table-responsive">

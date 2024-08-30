@@ -79,7 +79,7 @@ class EducationController extends Controller
         $education->tahun_lulus = $request->tahun_lulus;
         $education->save();
 
-        return redirect()->route('education.index')->with('success', 'Update Profile Berhasil');
+        return redirect()->route('education.index')->with('success', 'Update Educate Berhasil');
     }
 
     /**
