@@ -16,6 +16,13 @@
 	<link rel="stylesheet" href="{{asset('porto/vendors/nice-select/css/nice-select.css')}}">
 	<!-- main css -->
 	<link rel="stylesheet" href="{{asset('porto/css/style.css')}}">
+
+    <style>
+        nav {
+            background-color: rgb(104, 94, 94) !important;
+            height: 50px;
+        }
+    </style>
 </head>
 
 <body>
@@ -23,10 +30,10 @@
 	<!--================ Start Header Area =================-->
 	<header class="header_area">
 		<div class="main_menu">
-			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<nav class="navbar navbar-expand-lg ">
 				<div class="container">
 					<!-- Brand and toggle get grouped for better mobile display -->
-					<a class="navbar-brand logo_h" href="{{route('portofolio')}}"><strong>MAHADEWI</strong></a>
+					<a class="navbar-brand logo_h" href="{{route('portofolio')}}"><strong style="color: white">MAHADEWI</strong></a>
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
 					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="icon-bar"></span>
@@ -36,10 +43,10 @@
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav justify-content-end">
-							<li class="nav-item {{ Route::currentRouteName() == 'portofolio' ? 'active' : '' }}"><a class="nav-link" href="{{route('portofolio')}}">Home</a></li>
-							<li class="nav-item {{ Route::currentRouteName() == 'about' ? 'active' : '' }}"><a class="nav-link" href="{{route('about')}}">About</a></li>
-							<li class="nav-item {{ Route::currentRouteName() == 'experiences' ? 'active' : '' }}"><a class="nav-link" href="{{route('experiences')}}">Experiences</a></li>
-							<li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+							<li  class="nav-item {{ Route::currentRouteName() == 'portofolio' ? 'active' : '' }}"><a class="nav-link" href="{{route('portofolio')}}">Home</a></li>
+							<li  class="nav-item {{ Route::currentRouteName() == 'about' ? 'active' : '' }}"><a class="nav-link" href="{{route('about')}}">About</a></li>
+							<li  class="nav-item {{ Route::currentRouteName() == 'experiences' ? 'active' : '' }}"><a class="nav-link" href="{{route('experiences')}}">Experiences</a></li>
+							<li  class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
 						</ul>
 					</div>
 				</div>
