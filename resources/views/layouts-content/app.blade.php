@@ -46,7 +46,7 @@
 							<li  class="nav-item {{ Route::currentRouteName() == 'portofolio' ? 'active' : '' }}"><a class="nav-link" href="{{route('portofolio')}}">Home</a></li>
 							<li  class="nav-item {{ Route::currentRouteName() == 'about' ? 'active' : '' }}"><a class="nav-link" href="{{route('about')}}">About</a></li>
 							<li  class="nav-item {{ Route::currentRouteName() == 'experiences' ? 'active' : '' }}"><a class="nav-link" href="{{route('experiences')}}">Experiences</a></li>
-							<li  class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+							<li  class="nav-item {{ Route::currentRouteName() == 'portos' ? 'active' : '' }}"><a class="nav-link" href="{{route('portos')}}">Portfolio</a></li>
 						</ul>
 					</div>
 				</div>

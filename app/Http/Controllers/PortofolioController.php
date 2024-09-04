@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Models\Skill;
 use App\Models\Education;
 use App\Models\Experiences;
+use App\Models\Portos;
 
 class PortofolioController extends Controller
 {
@@ -26,6 +27,12 @@ class PortofolioController extends Controller
         $profile = Profile::first();
         $exp = Experiences::all();
         return view('portofolio.experiences', compact('exp', 'profile'));
+    }
+
+    public function portos() {
+        $profile = Profile::first();
+        $portos = Portos::all();
+        return view('portofolio.portos', compact('portos', 'profile'));
     }
 
 }
